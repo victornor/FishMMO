@@ -1,5 +1,6 @@
 ﻿using FishNet.Transporting;
 using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace FishMMO.Client
@@ -100,6 +101,10 @@ namespace FishMMO.Client
 				{
 					handshakeMSG.text = "Failed to get a login server!";
 				}
+			}
+			else
+			{
+				Debug.LogWarning("Login validation failed. Your username or password is most likely not allowed/valid");
 			}
 		}
 
